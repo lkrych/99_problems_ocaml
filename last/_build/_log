@@ -1,0 +1,14 @@
+### Starting build.
+# Target: last_test.ml.depends, tags: { extension:ml, file:last_test.ml, ocaml, ocamldep, quiet }
+ocamldep.opt -modules last_test.ml > last_test.ml.depends # cached
+# Target: last.ml.depends, tags: { extension:ml, file:last.ml, ocaml, ocamldep, quiet }
+ocamldep.opt -modules last.ml > last.ml.depends # cached
+# Target: last.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:last.cmo, file:last.ml, implem, ocaml, quiet }
+ocamlc.opt -c -I /Users/Leland/.opam/default/lib/bytes -I /Users/Leland/.opam/default/lib/oUnit -I /usr/local/lib/ocaml -o last.cmo last.ml # cached
+# Target: last_test.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:last_test.cmo, file:last_test.ml, implem, ocaml, quiet }
+ocamlc.opt -c -I /Users/Leland/.opam/default/lib/bytes -I /Users/Leland/.opam/default/lib/oUnit -I /usr/local/lib/ocaml -o last_test.cmo last_test.ml
++ ocamlc.opt -c -I /Users/Leland/.opam/default/lib/bytes -I /Users/Leland/.opam/default/lib/oUnit -I /usr/local/lib/ocaml -o last_test.cmo last_test.ml
+File "last_test.ml", line 2, characters 5-9:
+Error: Unbound module Core
+Command exited with code 2.
+# Compilation unsuccessful.
