@@ -1,0 +1,9 @@
+*~
+*.cmi
+*.cmo
+*.depends
+_digests
+_log
+oUnit*
+ocamlc*
+_build
