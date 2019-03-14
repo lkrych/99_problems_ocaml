@@ -2,6 +2,7 @@
 *.cmi
 *.cmo
 *.depends
+*.byte
 _digests
 _log
 oUnit*
