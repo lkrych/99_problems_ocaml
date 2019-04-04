@@ -1,2 +1,2 @@
 ocaml:
-	ocamlbuild -pkgs OUnit splittwotest.byte
+	ocamlbuild -pkgs OUnit splittwo_test.byte

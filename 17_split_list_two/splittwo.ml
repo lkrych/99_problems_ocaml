@@ -1,10 +1,9 @@
 let splittwo list index =
-  let rec build_list acc = function
-    | [] -> acc
-    | x :: tail -> build_list (acc::x) tail
-  let rec aux acc list = function
-  | [] -> acc
-  | x :: tail ->
-    if index = 0
-    then [acc, build_list list]
-    else aux (acc :: x)
+  let rec aux i acc = function
+    | [] -> (List.rev acc, [])
+    | x :: tail -> if index = 1
+                then (List.rev x::acc, tail)
+                else aux i+1 (x::acc) tail in
+  
+  aux 0 [] list
+  
