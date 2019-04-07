@@ -10,4 +10,4 @@ let rotate list index =
     let len = List.length list in
     let index = if len = 0 then 0 else ( index mod len + len) mod len in
     if index = 0 then list
-    else let a,b = split list index in b @ a;;
+    else let a,b = split list index in b @ a;; (* return value is b @ a which appends two lists *)
